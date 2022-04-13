@@ -30,13 +30,14 @@ function App() {
   }
   // handler functions for previous and next
   const handlePrevious = () => {
+    setSubmit(false)
     setInput(pokemon.id - 1)
     apiCall()
   }
 
   const handleNext = () => {
+    setSubmit(false)
     setInput(pokemon.id + 1)
-    console.log(input)
     apiCall()
   }
   return(
